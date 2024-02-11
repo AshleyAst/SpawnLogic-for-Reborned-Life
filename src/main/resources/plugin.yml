@@ -1,0 +1,6 @@
+name: SpawnLogic
+version: '${project.version}'
+main: xyz.gustycube.spawnlogic.SpawnLogic
+api-version: '1.20'
+author: GustyCube
+description: Plugin for Reborned Lifesteal that controls the logic of players joining.
