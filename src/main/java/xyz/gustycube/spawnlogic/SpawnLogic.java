@@ -40,7 +40,7 @@ public final class SpawnLogic extends JavaPlugin implements Listener {
         Bukkit.getScheduler().runTaskTimer(SpawnLogic.instance, () -> { } , 0, 60L);
         int playerPing = e.getPlayer().getPing();
         Player player = e.getPlayer();
-        if (playerPing < 200) {
+        if (playerPing > 200) {
             Bukkit.getScheduler().runTask(this, () -> {
                 Inventory inv = Bukkit.createInventory(player, 27, ChatColor.RED.toString() + ChatColor.BOLD + "You have high ping!");
                 // LEAVE BUTTON
